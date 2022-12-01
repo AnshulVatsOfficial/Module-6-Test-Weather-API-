@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" type="text/css" href="weatherapi.css">
+    <script src="weatherapi.js" defer></script>
+</head>
+<body>
+    <div class="my_container">
+        <div class="upper_div">
+            <div id="text1">Weather API</div>
+            <div class="enter_location">
+                <input id="input_location" type="text" placeholder="Location">
+                <div class="error_warnings" id="location_warnings"></div>
+            </div>
+            <div class="access_token">
+                <input id="input_access_token" type="text" placeholder="Access Token">
+                <div class="error_warnings" id="access_token_warnings"></div>
+            </div>
+            <button class="button" onclick="submit()">Submit</button>
+        </div>
+
+        <div class="lower_div">
+            <div id="weather-upper-data">Weather Data</div>
+
+            <div id="weather-lower-data">
+                <p class="location common">Location:</p>
+                <p class="lat common">Lat:</p>
+                <p class="long common">Long:</p>
+                <p class="time common">TimeZone:</p>
+                <p class="windspeed common">Wind Speed:</p>
+                <p class="pressure common">Pressure:</p>
+                <p class="windhumidity common">Humidity:</p>
+                <p class="winddirection common">Wind Direction:</p>
+                <p class="uvindex common">UV index:</p>
+                <p class="feellike common">Feels Like:</p>
+                <p class="Visibility common">Visibility:</p>
+                <p class="Conditions common">Conditions:</p>
+                <p class="Sunrise-Timing common">Sunrise Timing:</p>
+                <p class="Icon common">Icon:</p>
+                <p class="Description common">Description:</p>
+                <p class="temp common">Current Temperature:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
